@@ -15,13 +15,14 @@
             <th>Becas</th>
             <th>Opciones</th>
         </tr>
+
         <tbody>
             <tr *ngFor="let student of students">
                 <td>{{ student.id }}</td>
                 <td>{{ student.name }}</td>
                 <td>{{ student.age }}</td>
                 <td>{{ student.gender ? 'Hombre' : 'Mujer' }}</td>
-                <td><a class="btn btn-primary">Ver becas</a></td>
+                <td><a class="btn btn-primary" [routerLink]="['/ver-becas', student.id]">Ver becas</a></td>
                 <td><a class="btn btn-primary">Editar</a><a class="btn btn-danger">Borrar</a></td>
               </tr>
         </tbody>

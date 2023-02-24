@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms'; 
 import { IndexComponent } from './index/index.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { IndexComponent } from './index/index.component';
   ],
   imports: [
     CommonModule,
-    FormsModule 
+    FormsModule,
+    RouterModule 
   ]
 })
 export class HomeModule { }

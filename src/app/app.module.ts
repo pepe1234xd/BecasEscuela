@@ -6,11 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { RegistrarComponent } from './alumnos/registrar/registrar.component';
 import { VerComponent } from './alumnos/ver/ver.component';
 import { HomeModule } from './home/home.module';
+import { VerBecasComponent } from './alumnos/ver-becas/ver-becas.component';
 @NgModule({
   declarations: [
     AppComponent,
     RegistrarComponent,
-    VerComponent
+    VerComponent,
+    VerBecasComponent
   ],
   imports: [
     BrowserModule,
